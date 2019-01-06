@@ -146,6 +146,96 @@ function add_new_menu_item($menu)
     //return false;
 }
 
+
+
+function assign_menu($menu)
+{
+
+    global $connection;
+    $id = $menu['menu_id'];
+    $user = $menu['user_role_id'];
+
+    $sql = '';
+
+    if (!empty($id) and !empty($user)) {
+        $sql = "INSERT INTO `tbl_role_permission`(`menu_title`, `user_role`) VALUES ('$id','$user')";
+
+    } 
+
+    mysqli_query($connection, $sql);
+
+    if (mysqli_affected_rows($connection)) {
+        return true;
+
+    }
+
+    debug($user);
+    //return false;
+}
+
+
+function get_assigned_menulist()
+{
+
+    global $connection;
+
+    $sql = "SELECT * FROM `tbl_role_permission` ";
+    $result = mysqli_query($connection,$sql);
+
+    if(mysqli_num_rows($result)){
+        $rows = mysqli_fetch_all($result,MYSQLI_ASSOC);
+        $menus = [];
+
+        foreach ($rows AS $index=>$row){
+  
+                $id= $row['id'];
+                $menus['menu_'.$id]=[
+                    'id' => $row ['id'],
+                    'menu_id'=> $row ['menu_id'],
+                    'menu_title'=> $row ['menu_title'],
+                    'user_role_id' => $row ['user_role_id'],
+                    'user_role' => $row ['user_role'],
+                ];
+            
+        }
+
+    // debug( $menus );
+    }
+    return $menus;
+
+}
+
+
+function display_assigned_menulist(){
+    $menus = get_assigned_menulist();
+    
+    if(!$menus){
+        return 'No menu exists in database';
+    }
+
+   $html = '';
+  
+
+   foreach($menus AS $menu){
+ 
+          
+
+            $html .= '  <td class=" ">'.$menu['menu_title'].'</td>
+            <td class=" ">'.$menu['user_role'].'</td><td class=" last">
+            <button type="button" class="btn btn-demo dlt-btn" data-toggle="modal" data-target=".alert-modal">
+              Delete
+            </button>
+          </td></tr>';
+
+   }
+
+
+   return $html;
+}
+
+
+
+
 function get_all_menus()
 {
 
@@ -157,7 +247,7 @@ function get_all_menus()
 
         $menu = '';
         while ($row = mysqli_fetch_assoc($result)) {
-            $menu .= '<option value="' . $row['id'] . '">' . $row['title'] . '</option>';
+            $menu .= '<option value="' . $row['title'] . '">' . $row['title'] . '</option>';
 
         }
         //debug($menu);
@@ -177,7 +267,7 @@ function get_all_users()
 
         $user = '';
         while ($row = mysqli_fetch_assoc($result)) {
-            $user .= '<option value="' . $row['id'] . '">' . $row['user_role'] . '</option>';
+            $user .= '<option value="' . $row['user_role'] . '">' . $row['user_role'] . '</option>';
 
         }
         //debug($menu);
@@ -185,6 +275,7 @@ function get_all_users()
         return $user;
     }
 }
+
 function delete_menu_item($menu)
 {
     global $connection;
