@@ -36,10 +36,12 @@ include 'top_nav.php';
                         <div class="form-wrapper">
                           <h3>Role wise menu permission</h3>
                               <form action="assign_menu_rolewise.php" method="post">
+                              
                                   <select name="menu_id">
                                   <option value="">Select a parent menu (optional)</option>
                                   <?=get_all_menus()?>
                                   </select>
+                                  
                                   <select name="user_role_id">
                                   <option value="">Select user roles</option>
                                   <?=get_all_users()?>

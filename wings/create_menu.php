@@ -46,10 +46,7 @@ include 'top_nav.php';
                                   <option value="">Select a parent menu (optional)</option>
                                   <?=get_all_menus()?>
                                   </select>
-                                  <select name="user_role_id">
-                                  <option value="">Select user roles</option>
-                                  <?=get_all_users()?>
-                                  </select>
+                                 
                                   <input type="submit" name="submit" value="Add Menu Item">
                               </form>
                         </div>

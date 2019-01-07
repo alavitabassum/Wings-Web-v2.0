@@ -154,11 +154,13 @@ function assign_menu($menu)
     global $connection;
     $id = $menu['menu_id'];
     $user = $menu['user_role_id'];
+    $menu_name = $menu['menu_id'];
+    $user_name = $menu['user_role_id'];
 
     $sql = '';
 
     if (!empty($id) and !empty($user)) {
-        $sql = "INSERT INTO `tbl_role_permission`(`menu_title`, `user_role`) VALUES ('$id','$user')";
+        $sql = "INSERT INTO `tbl_role_permission`(`menu_id`, `user_role_id`, `menu_title`,`user_role`) VALUES ('$id','$user','$menu_name','$user_name')";
 
     } 
 
@@ -220,8 +222,8 @@ function display_assigned_menulist(){
  
           
 
-            $html .= '  <td class=" ">'.$menu['menu_title'].'</td>
-            <td class=" ">'.$menu['user_role'].'</td><td class=" last">
+            $html .= '  <td class=" ">'.$menu['menu_id'].'</td>
+            <td class=" ">'.$menu['user_role_id'].'</td><td class=" last">
             <button type="button" class="btn btn-demo dlt-btn" data-toggle="modal" data-target=".alert-modal">
               Delete
             </button>
@@ -247,7 +249,7 @@ function get_all_menus()
 
         $menu = '';
         while ($row = mysqli_fetch_assoc($result)) {
-            $menu .= '<option value="' . $row['title'] . '">' . $row['title'] . '</option>';
+            $menu .= '<option value="' . $row['id'] . $row['title'] . '">' . $row['title'] . '</option>';
 
         }
         //debug($menu);
@@ -267,7 +269,7 @@ function get_all_users()
 
         $user = '';
         while ($row = mysqli_fetch_assoc($result)) {
-            $user .= '<option value="' . $row['user_role'] . '">' . $row['user_role'] . '</option>';
+            $user .= '<option value="' . $row['id'] . '">' . $row['user_role'] . '</option>';
 
         }
         //debug($menu);
