@@ -77,9 +77,9 @@ function generate_multilevel_menus($connection, $menu_id = null)
     $sql = '';
    
     if (is_null($menu_id)) {
-        $sql = "SELECT * FROM `menus` WHERE `menu_id` IS NULL AND `user_role_id`=".$_SESSION['user_role_id'];
+        $sql = "SELECT tbl_role_permission.*, menus.* FROM tbl_role_permission left join menus on tbl_role_permission.menu_id = menus.id WHERE menus.menu_id IS NULL AND tbl_role_permission.user_role_id =".$_SESSION['user_role_id'];
     } else {
-        $sql = "SELECT * FROM `menus` WHERE `menu_id`=$menu_id AND `user_role_id`=".$_SESSION['user_role_id'];
+        $sql = "SELECT tbl_role_permission.*, menus.* FROM tbl_role_permission left join menus on tbl_role_permission.menu_id = menus.id WHERE menus.menu_id = $menu_id AND tbl_role_permission.user_role_id =".$_SESSION['user_role_id'];
     }
 
 
@@ -109,6 +109,7 @@ function generate_multilevel_menus($connection, $menu_id = null)
     return $menu;
 
 }
+
 
 function get_parent_menus()
 {
