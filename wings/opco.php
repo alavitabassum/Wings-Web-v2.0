@@ -1,6 +1,20 @@
- <?php require_once 'db.php';?>
+<?php
+session_start();
 
- <?php include 'header_general.php';?> <?php include 'sidebar.php'?> <?php include 'top_nav.php';?>
+if (!isset($_SESSION['id'], $_SESSION['user_role_id'])) {
+    header('location:index.php?lmsg=true');
+    exit;
+}
+
+require_once 'db.php';
+//get_menus();
+//display_menu();
+include 'header_general.php';
+include 'sidebar.php';
+include 'top_nav.php';
+
+?>
+
 <div class="right_col" role="main">
         <div class="">
 

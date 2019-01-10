@@ -1,17 +1,6 @@
 <?php
 
-    define("HOST","localhost");
-	define("DB_USER","root");
-	define("DB_PASS","");
-    define("DB_NAME","cms");
-    
-    $connection = mysqli_connect(HOST,DB_USER,DB_PASS,DB_NAME);
-	
-	if(!$connection)
-	{
-		die(mysqli_error());
-    }
-    
+include 'config.php';    
     
 function getUserAccessRoleByID($id)
 {
@@ -48,28 +37,6 @@ function show_menu($id)
 
 }
 
-/* function show_menu($id)
-{
-
-    global $connection;
-    $sql = "SELECT * FROM `tbl_role_permission` WHERE `user_role_id`=".$_SESSION['user_role_id'];
-    $result = mysqli_query($connection, $sql);
-
-    if (mysqli_num_rows($result)) {
-
-        $menus = '';
-        while ($row = mysqli_fetch_assoc($result)) {
-                 
-            $menus .= generate_multilevel_menus($connection);
-            //print_r($row);
-
-        }
-        //debug($menu);
-       
-
-        return $menus;
-    }
-} */
 
 function generate_multilevel_menus($connection, $menu_id = null)
 {
@@ -78,6 +45,7 @@ function generate_multilevel_menus($connection, $menu_id = null)
    
     if (is_null($menu_id)) {
         $sql = "SELECT tbl_role_permission.*, menus.* FROM tbl_role_permission left join menus on tbl_role_permission.menu_id = menus.id WHERE menus.menu_id IS NULL AND tbl_role_permission.user_role_id =".$_SESSION['user_role_id'];
+    
     } else {
         $sql = "SELECT tbl_role_permission.*, menus.* FROM tbl_role_permission left join menus on tbl_role_permission.menu_id = menus.id WHERE menus.menu_id = $menu_id AND tbl_role_permission.user_role_id =".$_SESSION['user_role_id'];
     }

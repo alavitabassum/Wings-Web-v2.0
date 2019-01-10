@@ -2,43 +2,19 @@
 session_start();
 
 require_once 'db.php';
+include 'login_session.php';
+include 'header_general.php';
+/* $query2 ="SELECT `menu_id` FROM `tbl_role_permission`WHERE `user_role_id` =".$_SESSION['user_role_id'];
+$rs2 = mysqli_query($connection, $query2);
+$row = mysqli_fetch_assoc($rs2);
 
-if (isset($_POST['login'])) {
-  if (!empty($_POST['first_name']) && !empty($_POST['password'])) {
-      $first_name = trim($_POST['first_name']);
-      $password = trim($_POST['password']);
-
-      //$md5Password = md5($password);
-
-      $sql = "SELECT * FROM `tbl_users` WHERE `first_name` = '".$first_name."' AND `password` = '".$password."'";
-      $rs = mysqli_query($connection,$sql);
-      $getNumRows = mysqli_num_rows($rs);
-
-      if ($getNumRows == 1) {
-          $getUserRow = mysqli_fetch_assoc($rs);
-          unset($getUserRow['password']);
-
-          $_SESSION = $getUserRow;
-
-          header('location:home.php');
-          exit();
-      } else {
-          $errorMsg = "Wrong username or password";
-        //  exit();
-          debug($sql);
-      }
-  }
-}
-
-//Set session data to an empty array
-if (isset($_GET['lmsg']) && $_GET['lmsg'] == true) {
-  $errorMsg = "Login required to access Wings";
-}
-
+if(!$rs2){
+    header('location:errorpage.php');
+}else {
+    echo "hoy nai";
+} */
 ?>
 
-
-<?php include 'header_general.php';?>
 
   <body class="login">
     <div>
