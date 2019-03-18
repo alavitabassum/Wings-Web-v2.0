@@ -70,9 +70,9 @@ include 'top_nav.php';
               
               <th class="column-title">Menu Item</th>
               <th class="column-title">User Role</th>
-              <th class="column-title no-link last">
+              <!-- <th class="column-title no-link last">
                 <span class="nobr">Delete</span>
-              </th>
+              </th> -->
              
             </tr>
           </thead>

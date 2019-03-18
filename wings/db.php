@@ -246,11 +246,7 @@ function display_assigned_menulist(){
    foreach($menus AS $menu){
  
             $html .= '  <td class=" ">'.$menu['menu_title'].'</td>
-            <td class=" ">'.$menu['user_role'].'</td><td class=" last">
-            <button type="button" class="btn btn-demo dlt-btn" data-toggle="modal" data-target=".alert-modal">
-              Delete
-            </button>
-          </td></tr>';
+            <td class=" ">'.$menu['user_role'].'</td></tr>';
 
    }
 
@@ -258,7 +254,11 @@ function display_assigned_menulist(){
    return $html;
 }
 
-
+/* <td class=" last">
+            <button type="button" class="btn btn-demo dlt-btn" data-toggle="modal" data-target=".alert-modal">
+              Delete
+            </button>
+          </td> */
 
 
 function get_all_menus()
