@@ -41,7 +41,7 @@ Resource style
   left: 4px;
   height: 100%;
   width: 8px;
-  background: #2C3491;
+  background: #00853e;
 }
 
 @media only screen and (min-width: 1170px) {
@@ -128,8 +128,8 @@ Resource style
   width: 15px;
   height: 15px;
   border-radius: 50%;
-  -webkit-box-shadow: 0 0 0 8px #2C3491, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
-          box-shadow: 0 0 0 8px #2C3491, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
+  -webkit-box-shadow: 0 0 0 8px #00853e, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 0 0 8px #00853e, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
 }
 
 .cd-timeline__img img {
@@ -144,7 +144,7 @@ Resource style
 }
 
 .indicator{
-  background: #2C3491;
+  background: #00853e;
 }
 
 .indicator-pending {
@@ -276,7 +276,7 @@ Resource style
     font-size: 1.5em;
     font-weight: 500;
     width: 8em;
-    background-color: #2C3491;
+    background-color: #00853e;
     margin-top: 3em;
     padding-bottom: 1em;
     padding-top: 1em;
@@ -375,7 +375,7 @@ blockquote{
 }
 blockquote h4{
   padding: 10px 38px;
-  color: #2C3491;
+  color: #00853e;
   font-weight: 600 !important;
 }
 blockquote ul li{

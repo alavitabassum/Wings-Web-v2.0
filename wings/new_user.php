@@ -35,7 +35,7 @@ include 'top_nav.php';
 
                         <div class="form-wrapper newUserForm">
                           <h3>Create New User</h3>
-                              <form action="new_user.php" method="post">
+                              <form action="" method="post">
                               <table>
                                 <tbody>
                                 <tr>
@@ -114,7 +114,7 @@ if(isset($_POST['submit_user'])){
     }
 
 }else{
-    header('location:new_user.php?error=Error occured while creating inventory');
+      echo "Something went wrong!";
 
 }
 

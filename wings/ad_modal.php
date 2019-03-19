@@ -8,7 +8,7 @@
 
             <!-- Use ID to fetch data (donot use class name as it is generic)-->
             <div class="modal-body promo-body">
-              <h1 id="promo-title">10% OFF</h1>
+              <h1 id="promo-title">Booking Management System</h1>
               <h2 id="promo-content">10% off on next 10 Deliveries</h2>
               <h5 id="promo-foot-note"> Offer lasts till 15th September</h5>
             </div>

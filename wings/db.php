@@ -301,6 +301,66 @@ function get_all_users()
     }
 }
 
+function get_all_user_names()
+{
+
+    global $connection;
+    $sql = "SELECT * FROM `tbl_users` WHERE `user_role_id` = 1 OR `user_role_id` = 2";
+    $result = mysqli_query($connection, $sql);
+
+    if (mysqli_num_rows($result)) {
+
+        $user = '';
+        while ($row = mysqli_fetch_assoc($result)) {
+            $user .= '<option value="' . $row['id'] .'">' . $row['first_name'] . '</option>';
+
+        }
+        //debug($menu);
+
+        return $user;
+    }
+}
+
+function get_all_inventories()
+{
+
+    global $connection;
+    $sql = "SELECT * FROM `tbl_inventory_info`";
+    $result = mysqli_query($connection, $sql);
+
+    if (mysqli_num_rows($result)) {
+
+        $user = '';
+        while ($row = mysqli_fetch_assoc($result)) {
+            $user .= '<option value="' . $row['id'] .'">' . $row['inventory_name'] . '</option>';
+
+        }
+        //debug($menu);
+
+        return $user;
+    }
+}
+
+function get_all_invLines()
+{
+
+    global $connection;
+    $sql = "SELECT * FROM `tbl_inventory_lines`";
+    $result = mysqli_query($connection, $sql);
+
+    if (mysqli_num_rows($result)) {
+
+        $user = '';
+        while ($row = mysqli_fetch_assoc($result)) {
+            $user .= '<option value="' . $row['id'] .'">' . $row['lineName'] . '</option>';
+
+        }
+        //debug($menu);
+
+        return $user;
+    }
+}
+
 function delete_menu_item($menu)
 {
     global $connection;

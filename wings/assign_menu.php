@@ -33,7 +33,7 @@ include 'top_nav.php';
 
                 <div class="x_content">
 
-                        <div class="form-wrapper">
+                        <div class="form-wrapper newForm">
                           <h3>Role wise menu permission</h3>
                               <form action="assign_menu_rolewise.php" method="post">
                               
@@ -46,7 +46,7 @@ include 'top_nav.php';
                                   <option value="">Select user roles</option>
                                   <?=get_all_users()?>
                                   </select>
-                                  <input type="submit" name="submit" value="Add">
+                                  <input  class="btn btn-success btn-ok" type="submit" name="submit" value="Add">
                               </form>
                         </div>
 

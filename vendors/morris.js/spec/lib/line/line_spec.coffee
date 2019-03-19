@@ -75,10 +75,10 @@ describe 'Morris.Line', ->
         xkey: 'x'
         ykeys: ['y', 'z']
         labels: ['y', 'z']
-        lineColors: ['#25ADE3', '#fedcba']
+        lineColors: ['#90bf3b', '#fedcba']
         smooth: true
 
-    shouldHavePath = (regex, color = '#25ADE3') ->
+    shouldHavePath = (regex, color = '#90bf3b') ->
       # Matches an SVG path element within the rendered chart.
       #
       # Sneakily uses line colors to differentiate between paths within
@@ -95,7 +95,7 @@ describe 'Morris.Line', ->
 
     it 'should generate smooth/jagged lines according to the value for each series when options.smooth is an array', ->
       Morris.Line $.extend(@defaults, smooth: ['y'])
-      shouldHavePath /M[\d\.]+,[\d\.]+(C[\d\.]+(,[\d\.]+){5}){4}/, '#25ADE3'
+      shouldHavePath /M[\d\.]+,[\d\.]+(C[\d\.]+(,[\d\.]+){5}){4}/, '#90bf3b'
       shouldHavePath /M[\d\.]+,[\d\.]+(L[\d\.]+,[\d\.]+){4}/, '#fedcba'
 
     it 'should ignore undefined values', ->

@@ -8,7 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Points | Wings v2.0</title>
+    <title>Points | Nilai Booking System</title>
 
     
     <!-- Added tags-->
@@ -73,8 +73,8 @@
                     <div class="navbar nav_title" style="border: 0;">
                         <a href="index.html" class="site_title">
                             <i>
-                                <img src="images/logo.png"> </i>
-                                <img class="full_logo" src="images/Wings.jpg" />
+                                <img class="smalllogo" src="images/nilai-N.png"> </i>
+                                <img class="full_logo" src="images/Logo-Nilai-University-200.png" />
                             </a>
                         </div>
 
@@ -83,7 +83,7 @@
                         <!-- menu profile quick info -->
                         <div class="profile clearfix">
                             <div class="profile_pic">
-                                <img src="images/img.jpg" alt="..." class="img-circle profile_img">
+                                <img src="images/img.png" alt="..." class="img-circle profile_img">
                             </div>
                             <div class="profile_info">
                                 <span>Welcome,</span>
@@ -129,7 +129,7 @@
                                     <ul class="nav navbar-nav navbar-right">
                                         <li class="">
                                             <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-                                                <img src="images/img.jpg" alt="">Shahriar Hasan
+                                                <img src="images/img.png" alt="">Shahriar Hasan
                                                 <span class=" fa fa-angle-down"></span>
                                             </a>
                                             <ul class="dropdown-menu dropdown-usermenu pull-right">

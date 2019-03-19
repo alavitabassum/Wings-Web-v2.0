@@ -8,15 +8,15 @@
           <div class="navbar nav_title" style="border: 0;">
             <a href="#" class="site_title">
               <i>
-                <img src="images/logo.png"> </i>
-              <img class="full_logo" src="images/Wings.jpg" />
+                <img  class="smalllogo"  src="images/nilai-N.png"> </i>
+              <img class="full_logo" src="images/Logo-Nilai-University-200.png" />
             </a>
           </div>
           <div class="clearfix"></div>
           <!-- menu profile quick info -->
           <div class="profile clearfix">
          <!--<div class="profile_pic">
-              <img src="images/img.jpg" alt="..." class="img-circle profile_img">
+              <img src="images/img.png" alt="..." class="img-circle profile_img">
             </div> -->
             <div class="profile_info">
               <span>Welcome,</span>

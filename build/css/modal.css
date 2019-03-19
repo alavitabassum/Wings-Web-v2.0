@@ -87,7 +87,7 @@
 	.modal.left .modal-body-right,
 	.modal.rightside .modal-body-right {
 		padding: 15px 15px 80px;
-		background-color: #2c3491;
+		background-color: #00853e;
 	}
 
         
@@ -113,7 +113,7 @@
 	.modal-header-right {
 		padding: 15px;
 		border-bottom: none;
-		background-color: #2c3491;
+		background-color: #00853e;
 
 	}
 .rightmodal.close{
@@ -122,27 +122,27 @@
 }
 
 .first-bq{
-	background-color: #2c3491;
+	background-color: #00853e;
 	color: white;
 }
 .first-bq blockquote h4{
 	color: white;
 }
 .first-bq blockquote {
-	border-left: 3px solid #2c3491 !important;
+	border-left: 3px solid #00853e !important;
 }
 .scnd-bq{
-	background-color: #2c3491;
+	background-color: #00853e;
 	color: white;
 }
 .scnd-bq blockquote h4{
 	color: white;
 }
 .prod-info-banner{
-	background-color: #2c3491;
+	background-color: #00853e;
 }
 .thrd-bq{
-	background-color: #2c3491;
+	background-color: #00853e;
 	color: white;
 }
 .thrd-bq blockquote h4{
@@ -161,7 +161,7 @@
 }
 
 .info-row{
-	background-color: #2c3491;
+	background-color: #00853e;
 	margin-right: -26px;
     margin-left: -26px;
 }

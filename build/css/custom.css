@@ -191,8 +191,13 @@
             padding: 5px 3px;
         }
         .site_title img {
+            max-height: 120px;
+            max-width: 190px;
+            margin-left: 0em;
+        }
+        .site_title .smalllogo {
             max-height: 66px;
-            max-width: 180px;
+            max-width: 85%;
             margin-left: 1em;
         }
         .nav-sm .main_container .top_nav {
@@ -208,7 +213,7 @@
         }
         .nav-sm .nav.child_menu li.active,
         .nav-sm .nav.side-menu li.active-sm {
-            border-right: 5px solid #25ade3;
+            border-right: 5px solid #90bf3b;
         }
         .nav-sm ul.nav.child_menu ul,
         .nav-sm .nav.side-menu li.active-sm ul ul {
@@ -217,7 +222,7 @@
             background: none
         }
         .nav-sm>.nav.side-menu>li.active-sm>a {
-            color: #25ade3 !important
+            color: #90bf3b !important
         }
         .nav-sm .nav.side-menu li a i.toggle-up {
             display: none !important
@@ -234,7 +239,7 @@
             top: 0;
             width: 210px;
             z-index: 4000;
-            background: #25ade3;
+            background: #90bf3b;
             display: none
         }
         .nav-sm ul.nav.child_menu li {
@@ -290,7 +295,7 @@
         }
         .profile_info h2 {
             font-size: 14px;
-            color: #25ADE3;
+            color: #90bf3b;
             margin: 0;
             font-weight: 700
         }
@@ -787,7 +792,7 @@
             padding-left: 36px
         }
         .nav-md ul.nav.child_menu li:before {
-            background: #25ade3;
+            background: #90bf3b;
             bottom: auto;
             content: "";
             height: 8px;
@@ -800,7 +805,7 @@
             border-radius: 50%
         }
         .nav-md ul.nav.child_menu li:after {
-            border-left: 1px solid #579bca;
+            border-left: 1px solid #3c763d;
             bottom: 0;
             content: "";
             left: 27px;
@@ -821,7 +826,7 @@
         }
         .nav.child_menu li li a:hover,
         .nav.child_menu li li a.active {
-            color: #2c3491;
+            color: #00853e;
         }
         .nav>li>a {
             position: relative;
@@ -830,7 +835,7 @@
         }
         .nav.side-menu>li.current-page,
         .nav.side-menu>li.active {
-            border-right: 5px solid #25ade3;
+            border-right: 5px solid #90bf3b;
         }
         .nav li.current-page {
             background: rgba(255, 255, 255, 0.05)
@@ -843,7 +848,7 @@
         }
         .nav.side-menu>li.active>a {
             text-shadow: rgba(0, 0, 0, 0.25) 0 -1px 0;
-            background:linear-gradient(#25ade3, #25ade3), #25ade3;
+            background:linear-gradient(#90bf3b, #90bf3b), #90bf3b;
             box-shadow: rgba(0, 0, 0, 0.25) 0 1px 0, inset rgba(255, 255, 255, 0.16) 0 1px 0;
             color: white;
         }
@@ -907,8 +912,8 @@
             box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
             color: #fff;
             margin-bottom: 0 !important;
-            background-color: #2C3491;
-            border-color: #2C3491 !important;
+            background-color: #00853e;
+            border-color: #00853e !important;
         }
         .toggle {
             float: left;
@@ -1334,8 +1339,8 @@
             border-color: #ddd !important
         }
         .paging_full_numbers a.paginate_active {
-            background-color: #9becff82 !important;
-            border-color: #9becff82 !important;
+            background-color: #90bf3ba8 !important;
+            border-color: #90bf3ba8 !important;
         }
         button.DTTT_button,
         div.DTTT_button,
@@ -1348,20 +1353,20 @@
             border: 1px solid rgba(221, 221, 221, 0.78);
         }
         table.jambo_table thead {
-            background: rgba(37, 173, 227, 0.48);
+            background: #90bf3ba3;
             color: #000;
         }
         table.jambo_table tbody tr:hover td {
-            background: #9becff82;
-            border-top: 1px solid #9becff82;
-            border-bottom: 1px solid #9becff82;
+            background: #90bf3ba8;
+            border-top: 1px solid #90bf3ba8;
+            border-bottom: 1px solid #90bf3ba8;
         }
         table.jambo_table tbody tr.selected {
-            background: #9becff82;
+            background: #90bf3ba8;
         }
         table.jambo_table tbody tr.selected td {
-            border-top: 1px solid #9becff82;
-            border-bottom: 1px solid #9becff82;
+            border-top: 1px solid #90bf3ba8;
+            border-bottom: 1px solid #90bf3ba8;
         }
         .dataTables_paginate a {
             background: #ff0000
@@ -1568,7 +1573,7 @@
             border: 1px solid #D9DEE4;
             border-top-left-radius: 0;
             border-top-right-radius: 0;
-            background-color: #97d8f2;
+            background-color: #90bf3b;
         }
         .dropdown-menu>li>a {
             color: rgb(0, 0, 0);
@@ -2404,23 +2409,23 @@
             color: #fff
         }
         .btn-success {
-            background: #579bca;
-            border: 1px solid #579bca;
+            background: #3c763d;
+            border: 1px solid #3c763d;
         }
         .btn-success:hover,
         .btn-success:focus,
         .btn-success:active,
         .btn-success.active,
         .open .dropdown-toggle.btn-success {
-            background: #579bca;
+            background: #3c763d;
         }
         .btn-success:hover,.btn-success.focus, .btn-success:focus{
-            background-color: #25ade3;
-            border-color: #25ade3;
-            border-bottom-color:  #25ade3;
-        border-top-color:  #25ade3;
-        border-right-color:  #25ade3;
-        border-left-color:  #25ade3;
+            background-color: #90bf3b;
+            border-color: #90bf3b;
+            border-bottom-color:  #90bf3b;
+        border-top-color:  #90bf3b;
+        border-right-color:  #90bf3b;
+        border-left-color:  #90bf3b;
         }
     
         .btn-primary:hover, .btn-primary.focus, .btn-primary:focus{
@@ -2433,17 +2438,17 @@
         }
     
         .btn-success:active:hover{
-        background-color: #25ade3;
-        border-color: #25ade3;
-        border-bottom-color:  #25ade3;
-        border-top-color:  #25ade3;
-        border-right-color:  #25ade3;
-        border-left-color:  #25ade3;
+        background-color: #90bf3b;
+        border-color: #90bf3b;
+        border-bottom-color:  #90bf3b;
+        border-top-color:  #90bf3b;
+        border-right-color:  #90bf3b;
+        border-left-color:  #90bf3b;
         }
         .btn-success:hover {
             color: #fff;
-            background-color: #25ade3;
-            border-color: #25ade3;
+            background-color: #90bf3b;
+            border-color: #90bf3b;
         }
     
         .btn-dark {
@@ -3983,7 +3988,7 @@
         }
         .wizard_horizontal ul.wizard_steps li a.done:before,
         .wizard_horizontal ul.wizard_steps li a.done .step_no {
-            background: #579bca;
+            background: #3c763d;
             color: #fff
         }
         .wizard_horizontal ul.wizard_steps li:first-child a:before {
@@ -4365,7 +4370,7 @@
         }
     
         .label-primary {
-            background-color: #25ADE3;
+            background-color: #90bf3b;
         }
         .btn-primary {
             color: #fff;
@@ -4374,7 +4379,7 @@
         }
         .btnSave {
             color: #fff;
-            background-color: #25ADE3 !important;
+            background-color: #90bf3b !important;
             border-color: #2e6da4;
         }
         @media screen and (max-width: 767px){
@@ -4445,7 +4450,7 @@
         }
     
         .tracker-btn{
-            background-color: #25ade3;
+            background-color: #90bf3b;
             color: white;
         }
     .empView-btn{
@@ -4482,11 +4487,11 @@
         float: right;
         }
         .merchant-edit{
-            background-color: #25ade3;
+            background-color: #90bf3b;
             color: white;
         }
         .employee-edit{
-            background-color: #25ade3;
+            background-color: #90bf3b;
             color: white;
         }
     
@@ -4497,7 +4502,7 @@
         
         .menu_section>li.menu-banner{
             text-shadow: rgba(0, 0, 0, 0.25) 0 -1px 0;
-            background:linear-gradient(#25ade3, #25ade3), #25ade3;
+            background:linear-gradient(#90bf3b, #90bf3b), #90bf3b;
             box-shadow: rgba(0, 0, 0, 0.25) 0 1px 0, inset rgba(255, 255, 255, 0.16) 0 1px 0;
         }
         .menu_section>li.menu-banner{
@@ -4573,22 +4578,22 @@
                 color: darkgrey;
             }
             .top-note span{
-                color: #2c3491;
+                color: #00853e;
             }
             .first-tile{
-                background-color: #000;
+                background-color: #002913;
             }
             .first-tile:hover{
-                background-color: #2C3491;
+                background-color: #00853e;
             }
             .second-tile{
-                background-color: #2C3491;
+                background-color: #00853e;
             }
             .third-tile{
-                background-color: #2C3491;
+                background-color: #00853e;
             }
             .fourth-tile{
-                background-color: #2C3491;
+                background-color: #00853e;
             }
             .top-row p{
                 font-size: 1.5em;
@@ -4633,19 +4638,20 @@
             font-weight: 900;
             font-size: 5em;
             line-height: 1;
-            color: #343d87;
+            color: #ffffff;
             text-align: left;
             margin: 10px 0 !important;
+            text-shadow: 4px 4px 1px grey;
         }
         .promo-body h2{
             font-size: 2em;
             font-weight: bold;
-            color: #343d87;
+            color: #ffffff;
         }
     
         .promo-body h5{
             font-weight: bold;
-            color: #25ade3;
+            color: #90bf3b;
         }
     }
     
@@ -4666,19 +4672,20 @@
             font-weight: 900;
             font-size: 3em;
             line-height: 1;
-            color: #343d87;
+            color: #ffffff;
             margin: 10px 0 !important;
+            text-shadow: 4px 4px 1px grey;
         }
     
         .promo-body h2{
             font-size: 1.25em;
             font-weight: bold;
-            color: #343d87;
+            color: #ffffff;
         }
     
         .promo-body h5{
             font-weight: bold;
-            color: #25ade3;
+            color: #90bf3b;
         }
     }
     
@@ -4693,3 +4700,31 @@
     .newUserForm table td input, .newUserForm table td label {
         padding: 5px;
     }
+
+     
+    .newForm input{
+        padding: 5px;
+    }
+
+    .newForm select {
+        padding: 7.5px;
+    }
+
+    .bannerImage{
+        height: 200px;
+    /*     background-image:url(../images/nilaiBanner.jpg); */
+        background-image: url('../images/nilaiBanner.jpg');
+    /* Set a specific height */
+    min-height: 400px; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left:10px;
+    margin-right: 10px;
+    width:98%;
+    }
+
+  

@@ -15,7 +15,7 @@ display_menu();
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Dashboard | Wings v2.0</title>
+  <title>Dashboard | Nilai Booking System</title>
   
   <meta property="og:url" content="http://alavi-works.printf.com.bd/wings/" />
 	<meta property="og:type" content="Order Fulfilment Service" />
@@ -78,8 +78,8 @@ display_menu();
           <div class="navbar nav_title" style="border: 0;">
             <a href="#" class="site_title">
               <i>
-                <img src="images/logo.png"> </i>
-              <img class="full_logo" src="images/Wings.jpg" />
+                <img  class="smalllogo"  src="images/nilai-N.png"> </i>
+              <img class="full_logo" src="images/Logo-Nilai-University-200.png" />
             </a>
           </div>
 
@@ -89,7 +89,7 @@ display_menu();
           <!-- menu profile quick info -->
           <div class="profile clearfix">
          <!--<div class="profile_pic">
-              <img src="images/img.jpg" alt="..." class="img-circle profile_img">
+              <img src="images/img.png" alt="..." class="img-circle profile_img">
             </div> -->   
             <div class="profile_info">
               <span>Welcome,</span>
@@ -142,7 +142,7 @@ display_menu();
             <ul class="nav navbar-nav navbar-right">
               <li class="">
                 <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-                  <img src="images/img.jpg" alt=""> Md  Islam
+                  <img src="images/img.png" alt=""> Md  Islam
                   <span class=" fa fa-angle-down"></span>
                 </a>
                 <ul class="dropdown-menu dropdown-usermenu pull-right">

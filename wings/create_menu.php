@@ -37,7 +37,7 @@ include 'top_nav.php';
 
 
 
-                        <div class="form-wrapper">
+                        <div class="form-wrapper newForm">
                           <h3>Add list item</h3>
                               <form action="add_menu.php" method="post">
                                   <input type="text" name="menu_title" placeholder="Type menu item name">
@@ -47,18 +47,18 @@ include 'top_nav.php';
                                   <?=get_all_menus()?>
                                   </select>
                                  
-                                  <input type="submit" name="submit" value="Add Menu Item">
+                                  <input  class="btn btn-success btn-ok" type="submit" name="submit" value="Add Menu Item">
                               </form>
                         </div>
 
-                    <div class="form-wrapper">
+                    <div class="form-wrapper newForm">
                       <h3>Delete menu item</h3>
                           <form action="delete_menu.php" method="post">
                           <select name="menu_id">
                               <option value="">Select a menu item to delete</option>
                               <?=get_all_menus()?>
                               </select>
-                              <input type="submit" name="submit" value="Delete Menu Item">
+                              <input  class="btn btn-success btn-ok" type="submit" name="submit" value="Delete Menu Item">
                           </form>
                    </div>
                 </div>

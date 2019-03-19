@@ -11,7 +11,7 @@
             <ul class="nav navbar-nav navbar-right">
               <li class="">
                 <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-                  <img src="images/img.jpg" alt="">   <?php echo getUserAccessRoleByID($_SESSION['user_role_id']); ?> 
+                  <img src="images/img.png" alt="">   <?php echo getUserAccessRoleByID($_SESSION['user_role_id']); ?> 
                   <span class=" fa fa-angle-down"></span>
                 </a>
                 <ul class="dropdown-menu dropdown-usermenu pull-right">

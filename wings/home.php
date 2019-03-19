@@ -16,9 +16,6 @@ include 'top_nav.php';
 ?>
 
       <!-- page content -->
-
-        <?php include 'ad_modal.php';?>
-
       <div class="right_col" role="main">
         <div class="">
           <div class="clearfix"></div>
@@ -30,6 +27,19 @@ include 'top_nav.php';
             </div>
           </div>
           <div class="clearfix"></div>
+          <div class="row top_tiles">
+          <div class="bannerImage animated flipInY col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          <div class="modal-body promo-body">
+              <h1 id="promo-title">Booking Management System</h1>
+          <!--     <h2 id="promo-content">10% off on next 10 Deliveries</h2>
+              <h5 id="promo-foot-note"> Offer lasts till 15th September</h5> -->
+            </div>
+
+          </div>
+            
+          </div>
+          <div class="clearfix"></div>
+
           <div class="row top_tiles top-row">
             <div class="animated flipInY col-lg-3 col-md-3 col-sm-6 col-xs-12" onmouseover="hovereffect()" onmouseout="noHover()">
               <div class="tile-stats top-tiles first-tile" id="first">
@@ -86,79 +96,7 @@ include 'top_nav.php';
               </div>
             </div>
           </div>
-          <!-- Reports Tiles-->
-          <div class="clearfix"></div>
-          <div class="row top_tiles">
-            <div class="animated flipInY col-lg-3 col-md-3 col-sm-6 col-xs-12">
-              <div class="tile-stats report-tiles">
-                <p class="report-time">Last 24 hours</p>
-                <h3>Delivered Reports</h3>
-                <p>Lorem ipsum psdea itgum rixt.</p>
-                <a href="">Click to view report </a>
-              </div>
-            </div>
-            <div class="animated flipInY col-lg-3 col-md-3 col-sm-6 col-xs-12">
-              <div class="tile-stats report-tiles">
-                <p class="report-time">Last 24 hours</p>
-                <h3>Cancelled Reports</h3>
-                <p>Lorem ipsum psdea itgum rixt.</p>
-                <a href="">Click to view report </a>
-              </div>
-            </div>
-            <div class="animated flipInY col-lg-3 col-md-3 col-sm-6 col-xs-12">
-              <div class="tile-stats report-tiles">
-                <p class="report-time">Last 24 hours</p>
-                <h3>Exchange Reports</h3>
-                <p>Lorem ipsum psdea itgum rixt.</p>
-                <a href="">Click to view report </a>
-              </div>
-            </div>
-            <div class="animated flipInY col-lg-3 col-md-3 col-sm-6 col-xs-12">
-              <div class="tile-stats report-tiles">
-                <p class="report-time">Last 24 hours</p>
-                <h3>Return Reports</h3>
-                <p>Lorem ipsum psdea itgum rixt.</p>
-                <a href="">Click to view report </a>
-              </div>
-            </div>
-          </div>
-
-          <div class="clearfix"></div>
-          <div class="row top_tiles">
-            <div class="animated flipInY col-lg-3 col-md-3 col-sm-6 col-xs-12">
-              <div class="tile-stats report-tiles">
-                <p class="report-time">Last Week</p>
-                <h3>Client Reports</h3>
-                <p>Lorem ipsum psdea itgum rixt.</p>
-                <a href="">Click to view report </a>
-              </div>
-            </div>
-            <div class="animated flipInY col-lg-3 col-md-3 col-sm-6 col-xs-12">
-              <div class="tile-stats report-tiles">
-                <p class="report-time">Last 24 hours</p>
-                <h3>Resource Routes</h3>
-                <p>Lorem ipsum psdea itgum rixt.</p>
-                <a href="">Click to view report </a>
-              </div>
-            </div>
-            <div class="animated flipInY col-lg-3 col-md-3 col-sm-6 col-xs-12">
-              <div class="tile-stats report-tiles">
-                <p class="report-time">Last 24 hours</p>
-                <h3>Performance Reports</h3>
-                <p>Lorem ipsum psdea itgum rixt.</p>
-                <a href="">Click to view report </a>
-              </div>
-            </div>
-            <div class="animated flipInY col-lg-3 col-md-3 col-sm-6 col-xs-12">
-              <div class="tile-stats report-tiles">
-                <p class="report-time">Last 24 hours</p>
-                <h3>Bank Reports</h3>
-                <p>Lorem ipsum psdea itgum rixt.</p>
-                <a href="">Click to view report </a>
-              </div>
-            </div>
-
-          </div>
+       
         </div>
       </div>
       <!-- /page content -->

@@ -17,7 +17,7 @@ display_menu();
 <body>
     <div class="container">
      
-        <div class="form-wrapper">
+        <div class="form-wrapper newForm">
          <h3>Add list item</h3>
             <form action="add_menu.php" method="post">
                 <input type="text" name="menu_title" placeholder="Type menu item name">
@@ -29,7 +29,7 @@ display_menu();
                 <input type="submit" name="submit" value="Add Menu Item">
             </form>
         </div>
-        <div class="form-wrapper">
+        <div class="form-wrapper newForm">
          <h3>Delete menu item</h3>
             <form action="delete_menu.php" method="post">
             <select name="menu_id">
