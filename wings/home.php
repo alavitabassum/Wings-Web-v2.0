@@ -44,8 +44,8 @@ include 'top_nav.php';
             <div class="animated flipInY col-lg-3 col-md-3 col-sm-6 col-xs-12" onmouseover="hovereffect()" onmouseout="noHover()">
               <div class="tile-stats top-tiles first-tile" id="first">
                 <div class="icon">
-                  <img class="icon-first-tile" id="BigBox" src="images/package.png" />
-                  <img class="small-icons" id="smallBox" src="images/box.png" />
+                  <img class="icon-first-tile" id="BigBox" src="images/gym.png" />
+                  <img class="small-icons" id="smallBox" src="images/ball.png" />
                   <script>
                     function hovereffect() {
                       var x = document.getElementById("BigBox");
@@ -62,26 +62,26 @@ include 'top_nav.php';
                     }
                   </script>
                 </div>
-                <p>Delivered</p>
-                <div class="count">179</div>
+                <p>Book Equipment</p>
+                <div class="count"></div>
               </div>
             </div>
             <div class="animated flipInY col-lg-3 col-md-3 col-sm-6 col-xs-12">
               <div class="tile-stats top-tiles second-tile">
                 <div class="icon">
-                  <img class="small-icons" src="images/Delivery.png" />
+                  <img class="small-icons" src="images/outfield.png" />
                 </div>
-                <p>On the way</p>
-                <div class="count">179</div>
+                <p>Book Outdoor Field</p>
+                <div class="count"></div>
               </div>
             </div>
             <div class="animated flipInY col-lg-3 col-md-3 col-sm-6 col-xs-12">
               <div class="tile-stats top-tiles third-tile">
                 <div class="icon">
-                  <img class="small-icons" src="images/Exchange.png" />
+                  <img class="small-icons" src="images/infield.png" />
                 </div>
-                <p>Exchange</p>
-                <div class="count">179</div>
+                <p>Book Indoor Court</p>
+                <div class="count"></div>
 
 
               </div>
@@ -91,8 +91,8 @@ include 'top_nav.php';
                 <div class="icon">
                   <img class="small-icons" src="images/Return.png" />
                 </div>
-                <p>Returned</p>
-                <div class="count">179</div>
+                <p>Nilai Sports Events</p>
+                <div class="count"></div>
               </div>
             </div>
           </div>
