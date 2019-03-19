@@ -14,17 +14,17 @@
 	<meta property="og:type" content="Nilai Booking System" />
 	<meta property="og:title" content="Nilai Booking System" />
 	<meta property="og:description" content="Nilai Booking System" />
-	<meta property="og:image" content="http://alavi-works.printf.com.bd/PFLogoFull.png" />
+	<meta property="og:image" content="https://www.nilai.edu.my/" />
 	<!--favicon-->
 	<link rel="icon" type="image/png" href="img/nilailogo.png" sizes="16x16">
 	<link rel="icon" type="image/png" href="img/nilailogo.png" sizes="32x32">
 
 	<!-- for IE -->
-	<link rel="icon" type="image/x-icon" href="img/nilai_n_icon.ico">
-	<link rel="shortcut icon" type="image/x-icon" href="img/nilai_n_icon.ico" />
-	<link rel="shortcut icon" href="img/nilai_n_icon.ico">
+	<link rel="icon" type="image/x-icon" href="img/nilailogo.ico">
+	<link rel="shortcut icon" type="image/x-icon" href="img/nilailogo.ico" />
+	<link rel="shortcut icon" href="img/nilailogo.ico">
 
-	<meta name="description" content="Paperfly Private Limited" />
+	<meta name="description" content="Nilai Booking System" />
 	<meta name="keywords" content="Nilai Booking System"
 	/>
 
