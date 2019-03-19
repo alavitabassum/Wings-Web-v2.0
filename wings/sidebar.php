@@ -6,7 +6,7 @@
       <div class="col-md-3 left_col">
         <div class="left_col scroll-view">
           <div class="navbar nav_title" style="border: 0;">
-            <a href="#" class="site_title">
+            <a href="home.php" class="site_title">
               <i>
                 <img  class="smalllogo"  src="images/nilai-N.png"> </i>
               <img class="full_logo" src="images/Logo-Nilai-University-200.png" />
