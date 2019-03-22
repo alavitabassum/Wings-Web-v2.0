@@ -62,7 +62,7 @@ include 'top_nav.php';
                     }
                   </script>
                 </div>
-                <p>Book Equipment</p>
+                <p><a href="book_equipment.php">Book Equipment</a></p>
                 <div class="count"></div>
               </div>
             </div>

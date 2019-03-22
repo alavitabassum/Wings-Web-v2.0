@@ -332,7 +332,7 @@ function get_all_inventories()
 
         $user = '';
         while ($row = mysqli_fetch_assoc($result)) {
-            $user .= '<option value="' . $row['id'] .'">' . $row['inventory_name'] . '</option>';
+            $user .= '<option value="' . $row['inventory_name'] .'">' . $row['inventory_name'] . '</option>';
 
         }
         //debug($menu);
@@ -352,7 +352,88 @@ function get_all_invLines()
 
         $user = '';
         while ($row = mysqli_fetch_assoc($result)) {
-            $user .= '<option value="' . $row['id'] .'">' . $row['lineName'] . '</option>';
+            $user .= '<option value="' . $row['lineName'] .'">' . $row['lineName'] . '</option>';
+
+        }
+        //debug($menu);
+
+        return $user;
+    }
+}
+
+function get_all_invRacks()
+{
+
+    global $connection;
+    $sql = "SELECT * FROM `tbl_inventory_racks`";
+    $result = mysqli_query($connection, $sql);
+
+    if (mysqli_num_rows($result)) {
+
+        $user = '';
+        while ($row = mysqli_fetch_assoc($result)) {
+            $user .= '<option value="' . $row['rackName'] .'">' . $row['rackName'] . '</option>';
+
+        }
+        //debug($menu);
+
+        return $user;
+    }
+}
+
+function get_sports_list()
+{
+
+    global $connection;
+    $sql = "SELECT * FROM `tbl_sports_info`";
+    $result = mysqli_query($connection, $sql);
+
+    if (mysqli_num_rows($result)) {
+
+        $user = '';
+        while ($row = mysqli_fetch_assoc($result)) {
+            $user .= '<option value="' . $row['sport_name'] .'">' . $row['sport_name'] . '</option>';
+
+        }
+        //debug($menu);
+
+        return $user;
+    }
+}
+
+function get_equipment_list()
+{
+
+    global $connection;
+    $sql = "SELECT * FROM `tbl_equipment_info`";
+    $result = mysqli_query($connection, $sql);
+
+    if (mysqli_num_rows($result)) {
+
+        $user = '';
+        while ($row = mysqli_fetch_assoc($result)) {
+            $user .= '<option value="' . $row['equip_name'] .'">' . $row['equip_name'] . '</option>';
+
+        }
+        //debug($menu);
+
+        return $user;
+    }
+}
+
+
+function get_sports_list_byID()
+{
+
+    global $connection;
+    $sql = "SELECT * FROM `tbl_sports_info`";
+    $result = mysqli_query($connection, $sql);
+
+    if (mysqli_num_rows($result)) {
+
+        $user = '';
+        while ($row = mysqli_fetch_assoc($result)) {
+            $user .= '<option value="' . $row['id'] .'">' . $row['sport_name'] . '</option>';
 
         }
         //debug($menu);

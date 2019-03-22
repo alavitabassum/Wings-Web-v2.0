@@ -25,7 +25,7 @@ if (isset($_POST['login'])) {
       } else {
           $errorMsg = "Wrong username or password";
         //  exit();
-          debug($sql);
+         // debug($sql);
       }
   }
 }
