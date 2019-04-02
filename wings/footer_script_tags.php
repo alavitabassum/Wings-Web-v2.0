@@ -1,10 +1,10 @@
   <!-- promo modal Script-->
 
-  <script>
+  <!-- <script>
     $(document).ready(function () {
       $('.modal').modal('show');
     });
-  </script>
+  </script> -->
   <!-- / promo modal script-->
 
       <!-- /page content -->
@@ -23,8 +23,16 @@
 
 
 
-   <!-- Dropzone.js -->
-   <script src="../vendors/dropzone/dist/min/dropzone.min.js"></script>
+
+  
+  <!-- jQuery -->
+  <script src="../vendors/jquery/dist/jquery.min.js"></script>
+  <!-- Bootstrap -->
+  <script src="../vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+  <!-- FastClick -->
+  <script src="../vendors/fastclick/lib/fastclick.js"></script>
+  <!-- NProgress -->
+  <script src="../vendors/nprogress/nprogress.js"></script>  
     <!-- bootstrap-daterangepicker -->
     <script src="../vendors/moment/min/moment.min.js"></script>
     <script src="../vendors/bootstrap-daterangepicker/daterangepicker.js"></script>
@@ -37,16 +45,9 @@
     <!-- jQuery Knob -->
   <script src="../vendors/jquery-knob/dist/jquery.knob.min.js"></script>
   
+   <!-- Dropzone.js -->
+   <script src="../vendors/dropzone/dist/min/dropzone.min.js"></script>
 
-  
-  <!-- jQuery -->
-  <script src="../vendors/jquery/dist/jquery.min.js"></script>
-  <!-- Bootstrap -->
-  <script src="../vendors/bootstrap/dist/js/bootstrap.min.js"></script>
-  <!-- FastClick -->
-  <script src="../vendors/fastclick/lib/fastclick.js"></script>
-  <!-- NProgress -->
-  <script src="../vendors/nprogress/nprogress.js"></script>
   <!-- iCheck -->
   <script src="../vendors/iCheck/icheck.min.js"></script>
   <!-- Datatables -->
@@ -70,7 +71,45 @@
   <script src="../build/js/custom.js"></script>
   
 
-  
+     <!-- Initialize datetimepicker -->
+<script>
+    $('#myDatepicker').datetimepicker();
+    
+    $('#myDatepicker2').datetimepicker({
+        format: 'YYYY.MM.DD'
+    });
+    
+    $('#myDatepicker3').datetimepicker({
+        format: 'hh:mm'
+    });
+
+    $('#myDatepicker22').datetimepicker({
+        format: 'YYYY.MM.DD'
+    });
+    
+    $('#myDatepicker33').datetimepicker({
+        format: 'hh:mm'
+    });
+    
+    $('#myDatepicker4').datetimepicker({
+        ignoreReadonly: true,
+        allowInputToggle: true
+    });
+
+    $('#datetimepicker6').datetimepicker();
+    
+    $('#datetimepicker7').datetimepicker({
+        useCurrent: false
+    });
+    
+    $("#datetimepicker6").on("dp.change", function(e) {
+        $('#datetimepicker7').data("DateTimePicker").minDate(e.date);
+    });
+    
+    $("#datetimepicker7").on("dp.change", function(e) {
+        $('#datetimepicker6').data("DateTimePicker").maxDate(e.date);
+    });
+</script>
   
 </body>
 

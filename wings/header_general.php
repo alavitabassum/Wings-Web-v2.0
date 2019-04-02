@@ -35,6 +35,14 @@
   <link href="../vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
   <!-- NProgress -->
   <link href="../vendors/nprogress/nprogress.css" rel="stylesheet">
+  <!-- bootstrap-daterangepicker -->
+  <link href="../vendors/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
+    <!-- bootstrap-datetimepicker -->
+    <link href="../vendors/bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.css" rel="stylesheet">
+    <!-- Ion.RangeSlider -->
+    <link href="../vendors/normalize-css/normalize.css" rel="stylesheet">
+    <link href="../vendors/ion.rangeSlider/css/ion.rangeSlider.css" rel="stylesheet">
+    <link href="../vendors/ion.rangeSlider/css/ion.rangeSlider.skinFlat.css" rel="stylesheet">
   <!-- iCheck -->
   <link href="../vendors/iCheck/skins/flat/green.css" rel="stylesheet">
   <!-- Datatables -->
@@ -50,18 +58,10 @@
   <link href="../build/css/custom.css " rel="stylesheet">
   <link href="../build/css/timeline-style.css " rel="stylesheet">
 
-  <!-- bootstrap-daterangepicker -->
-  <link href="../vendors/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
-    <!-- bootstrap-datetimepicker -->
-    <link href="../vendors/bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.css" rel="stylesheet">
-    <!-- Ion.RangeSlider -->
-    <link href="../vendors/normalize-css/normalize.css" rel="stylesheet">
-    <link href="../vendors/ion.rangeSlider/css/ion.rangeSlider.css" rel="stylesheet">
-    <link href="../vendors/ion.rangeSlider/css/ion.rangeSlider.skinFlat.css" rel="stylesheet">
 
     <!-- select2-->
-    <link href="../vendors/select2/dist/css/select2.min.css" rel="stylesheet" />
+    <!-- <link href="../vendors/select2/dist/css/select2.min.css" rel="stylesheet" />
     <script src="../vendors/select2/dist/js/select2.min.js"></script>
-  
+   -->
 
 </head>
