@@ -502,3 +502,24 @@ function get_outdoorList()
         return $user;
     }
 }
+
+
+function get_all_fields()
+{
+
+    global $connection;
+    $sql = "SELECT * FROM `tbl_fields_info`";
+    $result = mysqli_query($connection, $sql);
+
+    if (mysqli_num_rows($result)) {
+
+        $user = '';
+        while ($row = mysqli_fetch_assoc($result)) {
+            $user .= '<option value="' . $row['field_name'] .'">' . $row['field_name'] . '</option>';
+
+        }
+        //debug($menu);
+
+        return $user;
+    }
+}
