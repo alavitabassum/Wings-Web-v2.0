@@ -62,7 +62,7 @@ include 'top_nav.php';
                     }
                   </script>
                 </div>
-                <p><a href="book_equipment.php">Book Equipment</a></p>
+                <p><a href="booking.php"  style="color:white !important;">Book Equipment</a></p>
                 <div class="count"></div>
               </div>
             </div>
@@ -71,7 +71,7 @@ include 'top_nav.php';
                 <div class="icon">
                   <img class="small-icons" src="images/outfield.png" />
                 </div>
-                <p>Book Outdoor Field</p>
+                <p><a href="outdoor_booking.php" style="color:white !important;">Book Outdoor Field</a></p>
                 <div class="count"></div>
               </div>
             </div>
@@ -80,7 +80,7 @@ include 'top_nav.php';
                 <div class="icon">
                   <img class="small-icons" src="images/infield.png" />
                 </div>
-                <p>Book Indoor Court</p>
+                <p ><a href="indoor_booking.php" style="color:white !important;">Book Indoor Court</a></p>
                 <div class="count"></div>
 
 
@@ -91,7 +91,7 @@ include 'top_nav.php';
                 <div class="icon">
                   <img class="small-icons" src="images/Return.png" />
                 </div>
-                <p>Nilai Sports Events</p>
+                <p><a href="view_bookings_accepted.php" style="color:white !important;">Confirmed Bookings</a></p>
                 <div class="count"></div>
               </div>
             </div>

@@ -26,7 +26,7 @@ include 'top_nav.php';
             <div class="col-md-12 col-sm-12 col-xs-12">
               <div class="x_panel">
                 <div class="x_title">
-                  <h2>New Equipment</h2>
+                  <h2>Return Equipment</h2>
 
                   <div class="clearfix"></div>
                 </div>
@@ -34,42 +34,19 @@ include 'top_nav.php';
                 <div class="x_content">
 
                         <div class="form-wrapper newUserForm">
-                          <h3>Create New Equipment</h3>
-                              <form action="new_Inv_equipment.php" method="post">
+                       
+                              <form action="return_equipment.php" method="post">
                               <table>
                                 <tbody>
 
-                                    <tr>
-                                    <td> <label class="form_label">Enter Sport Name</label></td>
-                                    <td>
-                                    <select style="width: 184px!important;  padding: 8px;" name="sport_id" required>
-                                    <option value="">Select Sport Category</option>
-                                    <?=get_sports_list()?>
-                                    </select>
-                                    </td>
-                                    </tr>
-
-                                    <!-- <tr>
-                                    <td> <label class="form_label">Enter Equipment Name</label></td>
-                                    <td><input type="text" name="Equipment_name" placeholder="Equipment name" required></td>
-                                    </tr> -->
+                                   
 
                                     <tr>
                                     <td> <label class="form_label">Select Equipment</label></td>
                                     <td>
                                     <select style="width: 184px!important;  padding: 8px;" name="Equipment_name" required>
                                     <option value="">Select Equipment</option>
-                                    <?=get_equipment_list()?>
-                                    </select>
-                                    </td>
-                                    </tr>
-
-                                    <tr>
-                                    <td> <label class="form_label">Select Inventory Rack</label></td>
-                                    <td>
-                                    <select style="width: 184px!important;  padding: 8px;" name="rack_id" required>
-                                    <option value="">Select Inventory Rack</option>
-                                    <?=get_all_invRacks()?>
+                                    <?=get_InventoryEquipment_list()?>
                                     </select>
                                     </td>
                                     </tr>
@@ -100,8 +77,7 @@ include 'top_nav.php';
 
 if(isset($_POST['submit_Equipment'])){
 
-    $sport_id = $_POST['sport_id'];
-    $rack_id = $_POST['rack_id'];
+
     $Equipment_name = $_POST['Equipment_name'];
     $num_of_equipments = $_POST['num_of_equipments'];
     $user_role = $_SESSION['first_name'];
@@ -111,8 +87,8 @@ if(isset($_POST['submit_Equipment'])){
 
     $sql = '';
 
-    if (!empty($sport_id) and !empty($rack_id) and !empty($Equipment_name)) {
-        $sql = "INSERT INTO `tbl_inventory_equipment`( `equip_name`, `sport_name`, `rack_name`, `num_of_equipments`, `entry_by`) VALUES ('$Equipment_name','$sport_id', '$rack_id','$num_of_equipments', '$user_role')";
+    if (!empty($Equipment_name)) {
+        $sql = "UPDATE `tbl_inventory_equipment` SET `num_of_equipments` = num_of_equipments+$num_of_equipments WHERE `equip_name`= '$Equipment_name'";
     
     } else{
         echo '<script>
@@ -121,13 +97,13 @@ if(isset($_POST['submit_Equipment'])){
     }
     mysqli_query($connection, $sql);
 
-    if (mysqli_affected_rows($connection)>0) {
+    if (mysqli_affected_rows($connection)) {
         echo '<script>
-        alert("New Equipment Created");
+        alert("Inventory Updated");
         </script>';
     }else{
         echo '<script>
-        alert("Error! Item already registered. Go to Return Equipment menu option to update Inventory");
+        alert("Error!");
         </script>';
     }
 

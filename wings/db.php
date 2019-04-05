@@ -421,6 +421,25 @@ function get_equipment_list()
     }
 }
 
+function get_InventoryEquipment_list()
+{
+
+    global $connection;
+    $sql = "SELECT * FROM `tbl_inventory_equipment`";
+    $result = mysqli_query($connection, $sql);
+
+    if (mysqli_num_rows($result)) {
+
+        $user = '';
+        while ($row = mysqli_fetch_assoc($result)) {
+            $user .= '<option value="' . $row['equip_name'] .'">' . $row['equip_name'] . '</option>';
+
+        }
+        //debug($menu);
+
+        return $user;
+    }
+}
 
 function get_sports_list_byID()
 {
@@ -442,19 +461,44 @@ function get_sports_list_byID()
     }
 }
 
-function delete_menu_item($menu)
+
+
+function get_indoorList()
 {
+
     global $connection;
-    $id = $menu['menu_id'];
-    $sql = "DELETE FROM `menus` WHERE  `id`= $id";
+    $sql = "SELECT * FROM `tbl_fields_info` WHERE `indoor/outdoor` = 'indoor'";
+    $result = mysqli_query($connection, $sql);
 
-    mysqli_query($connection, $sql);
+    if (mysqli_num_rows($result)) {
 
-    if (mysqli_affected_rows($connection)) {
-        return true;
+        $user = '';
+        while ($row = mysqli_fetch_assoc($result)) {
+            $user .= '<option value="' . $row['field_name'] .'">' . $row['field_name'] . '</option>';
 
+        }
+        //debug($menu);
+
+        return $user;
     }
-    return false;
 }
 
+function get_outdoorList()
+{
 
+    global $connection;
+    $sql = "SELECT * FROM `tbl_fields_info` WHERE `indoor/outdoor` = 'outdoor'";
+    $result = mysqli_query($connection, $sql);
+
+    if (mysqli_num_rows($result)) {
+
+        $user = '';
+        while ($row = mysqli_fetch_assoc($result)) {
+            $user .= '<option value="' . $row['field_name'] .'">' . $row['field_name'] . '</option>';
+
+        }
+        //debug($menu);
+
+        return $user;
+    }
+}
